@@ -22,6 +22,4 @@ func main() {
 	r.POST("/customers", auth.Auth(),handlers.PostCustomer)
 	r.PUT("/customers/:id", auth.Auth(),handlers.UpdateCustomer)
 	r.DELETE("/customers/:id", auth.Auth(),handlers.DeleteCustomer)
-
-	r.Run(":8080")
 }
